@@ -104,8 +104,8 @@ with st.sidebar:
             st.error("Failed to clear collection.")
 
     st.subheader("Connection")
-    ollama_url = st.text_input("Ollama URL", value="http://64.226.86.247:11434")
-    llm_url = st.text_input("LLM Base URL", value="https://procia-models2.winu.fr/v1")
+    ollama_url = st.text_input("Ollama URL", value="http://ip_address:11434")
+    llm_url = st.text_input("LLM Base URL", value="https://base_url/v1")
     api_key = st.text_input("API Key", value="k", type="password")
     
     # Update RAG instance if settings change

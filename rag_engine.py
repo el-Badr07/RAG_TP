@@ -6,7 +6,7 @@ import chromadb
 import uuid
 
 class MinimalRAG:
-    def __init__(self, ollama_base_url="http://64.226.86.247:11434", llm_base_url="https://procia-models2.winu.fr/v1", embedding_model="nomic-embed-text:v1.5", llm_model="Qwen/Qwen3-4B-Instruct-2507-FP8", api_key="k", collection_name="rag_collection", persist_directory="./chroma_db"):
+    def __init__(self, ollama_base_url="http://ip_address:11434", llm_base_url="https://base_url/v1", embedding_model="nomic-embed-text:v1.5", llm_model="Qwen/Qwen3-4B-Instruct-2507-FP8", api_key="k", collection_name="rag_collection", persist_directory="./chroma_db"):
         self.ollama_base_url = ollama_base_url
         self.embedding_model = embedding_model
         self.llm_model = llm_model
